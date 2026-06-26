@@ -200,7 +200,7 @@ body {
 .hero-text-block {
     width: 343px;
     left: 50%;
-    top: 470px;
+    top: 500px;
     position: absolute;
     display: flex;
     flex-direction: column;
