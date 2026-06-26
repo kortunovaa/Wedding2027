@@ -145,7 +145,7 @@ body {
 
 .hero-main {
     align-self: stretch;
-    height: 920px;           /* ← УВЕЛИЧЕНО (было 820px) */
+    height: 870px;           /* ← УВЕЛИЧЕНО (было 820px) */
     position: relative;
 }
 
@@ -154,7 +154,7 @@ body {
     height: 266px;
     position: absolute;
     left: 0;
-    top: 280px;              /* ← СДВИНУТО НИЖЕ (было 250px) */
+    top: 370px;              /* ← СДВИНУТО НИЖЕ (было 250px) */
     background: #979797;
     overflow: hidden;
 }
@@ -170,7 +170,7 @@ body {
 .hero-names-block {
     width: 343px;
     left: 50%;
-    top: 180px;              /* ← СДВИНУТО НИЖЕ (было 150px) */
+    top: 170px;              /* ← СДВИНУТО НИЖЕ (было 150px) */
     position: absolute;
     transform: translateX(-50%);
 }
@@ -200,7 +200,7 @@ body {
 .hero-text-block {
     width: 343px;
     left: 50%;
-    top: 650px;
+    top: 680px;
     position: absolute;
     display: flex;
     flex-direction: column;
