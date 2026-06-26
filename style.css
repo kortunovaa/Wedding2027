@@ -110,12 +110,12 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 21px;
-    padding-left: 50px; 
+    padding-left: 50px;
 }
 
 .hero-title {
     width: 343px;
-    text-align:  left;
+    text-align: left;
 }
 
 .hero-title-dark {
@@ -163,6 +163,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transform: none !important;  /* ← УБИРАЕМ ПОВОРОТ НАВСЕГДА */
     transform-origin: center;
 }
 
@@ -234,13 +235,13 @@ body {
 }
 
 .hero-text-invite .hero-text-dark {
-    text-transform: lowercase;
+    text-transform: none;
     font-size: 20px;
     line-height: 20px;
 }
 
 .hero-text-invite .hero-text-accent {
-    text-transform: lowercase;
+    text-transform: none;
     font-size: 20px;
     line-height: 20px;
 }
@@ -298,7 +299,7 @@ body {
 .timer-box {
     align-self: stretch;
     height: 57px;
-     width: 100%; 
+    width: 100%;
     background: #764545;
     border-radius: 16px;
     display: flex;
@@ -446,7 +447,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
 }
 
@@ -619,12 +620,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
 }
 
 .organizer-title {
     width: 294px;
+    text-align: left;
 }
 
 .organizer-title-accent {
@@ -648,9 +650,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;    /* ← БЫЛО center, СТАЛО flex-start */
+    align-items: flex-start;
     gap: 11px;
-     padding-left: 23px;
+    padding-left: 23px;
 }
 
 .org-item {
@@ -660,7 +662,7 @@ body {
     font-family: 'Wulkan Display', serif;
     font-weight: 500;
     line-height: 20px;
-    text-align: left;          /* ← БЫЛО center, СТАЛО left */
+    text-align: left;
 }
 
 .org-dot {
@@ -695,8 +697,6 @@ body {
     transform: scale(1.02);
 }
 
-/* ================================================================ */
-/* ========== БЛОК 8: ПОДПИСЬ ========== */
 /* ================================================================ */
 /* ========== БЛОК 8: ПОДПИСЬ ========== */
 /* ================================================================ */
@@ -909,7 +909,7 @@ body {
     
     /* ===== УБИРАЕМ ПОВОРОТ ФОТО НА ТЕЛЕФОНЕ ===== */
     .hero-photo {
-        transform: none !important;  /* ← убираем поворот */
+        transform: none !important;
         object-fit: cover;
         width: 100%;
         height: 100%;
