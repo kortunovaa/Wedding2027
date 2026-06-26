@@ -145,7 +145,7 @@ body {
 
 .hero-main {
     align-self: stretch;
-    height: 870px;           /* ← УВЕЛИЧЕНО (было 820px) */
+    height: 920px;           /* ← УВЕЛИЧЕНО (было 820px) */
     position: relative;
 }
 
