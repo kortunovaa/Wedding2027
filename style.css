@@ -108,14 +108,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     gap: 21px;
-    padding-left: 50px;
+    padding-left: 0;
 }
 
 .hero-title {
     width: 343px;
-    text-align: left;
+    text-align: center;
 }
 
 .hero-title-dark {
@@ -163,19 +163,20 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform: none !important;  /* ← УБИРАЕМ ПОВОРОТ НАВСЕГДА */
+    transform: none !important;
     transform-origin: center;
 }
 
 .hero-names-block {
     width: 343px;
-    left: 50px;
+    left: 50%;
     top: -20px;
     position: absolute;
+    transform: translateX(-50%);
 }
 
 .hero-names {
-    text-align: left;
+    text-align: center;
 }
 
 .hero-names-accent {
@@ -198,18 +199,20 @@ body {
 
 .hero-text-block {
     width: 343px;
-    left: 56px;
+    left: 50%;
     top: 470px;
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     gap: 18px;
+    transform: translateX(-50%);
 }
 
 .hero-text-greeting {
     align-self: stretch;
+    text-align: center;
 }
 
 .hero-text-accent {
@@ -232,6 +235,7 @@ body {
 
 .hero-text-invite {
     width: 293px;
+    text-align: center;
 }
 
 .hero-text-invite .hero-text-dark {
@@ -264,18 +268,20 @@ body {
 
 .timer-content {
     width: 293px;
-    left: 70px;
+    left: 50%;
     top: 29px;
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: center;
     gap: 13px;
+    transform: translateX(-50%);
 }
 
 .timer-title {
     align-self: stretch;
+    text-align: center;
 }
 
 .timer-title-dark {
@@ -387,8 +393,8 @@ body {
 .schedule-title-wrapper {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
-    padding-left: 45px;  /* ← сдвиг вправо, меняйте это значение */
+    justify-content: center;
+    padding-left: 0;
 }
 
 .schedule-title {
@@ -398,6 +404,7 @@ body {
     font-family: 'Wulkan Display', serif;
     font-weight: 500;
     line-height: 30px;
+    text-align: center;
 }
 
 .schedule-list {
@@ -448,20 +455,21 @@ body {
 
 .dresscode-content {
     width: 293px;
-    left: 60px;
+    left: 50%;
     top: 28px;
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     gap: 12px;
+    transform: translateX(-50%);
 }
 
 .dresscode-title {
     align-self: stretch;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 8px;
 }
 
@@ -490,7 +498,7 @@ body {
     font-family: 'Wulkan Display', serif;
     font-weight: 500;
     line-height: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .dresscode-colors {
@@ -499,6 +507,7 @@ body {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 14px;
 }
 
@@ -621,20 +630,21 @@ body {
 
 .organizer-content {
     width: 346px;
-    left: 40px;
+    left: 50%;
     top: 28px;
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
+    transform: translateX(-50%);
 }
 
 .organizer-title {
     width: 294px;
-    padding-left: 15px;
-    text-align: left;
+    padding-left: 0;
+    text-align: center;
 }
 
 .organizer-title-accent {
@@ -658,9 +668,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     gap: 11px;
-    padding-left: 23px;
+    padding-left: 0;
 }
 
 .org-item {
@@ -670,7 +680,7 @@ body {
     font-family: 'Wulkan Display', serif;
     font-weight: 500;
     line-height: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .org-dot {
@@ -725,7 +735,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;       /* ← выравнивание по центру */
+    align-items: center;
     gap: 2px;
     width: 294px;
 }
@@ -736,7 +746,7 @@ body {
     font-family: 'Wulkan Display', serif;
     font-weight: 500;
     line-height: 28px;
-    text-align: center;       /* ← текст по центру */
+    text-align: center;
 }
 
 .footer-text-accent {
@@ -745,7 +755,7 @@ body {
     font-family: 'Wulkan Display', serif;
     font-weight: 500;
     line-height: 28px;
-    text-align: center;       /* ← текст по центру */
+    text-align: center;
 }
 
 /* ================================================================ */
@@ -900,7 +910,6 @@ body {
         display: block;
     }
     
-    /* Для очень маленьких экранов */
     @media (max-width: 360px) {
         .hero-card,
         .timer-card,
@@ -915,7 +924,6 @@ body {
         }
     }
     
-    /* ===== УБИРАЕМ ПОВОРОТ ФОТО НА ТЕЛЕФОНЕ ===== */
     .hero-photo {
         transform: none !important;
         object-fit: cover;
@@ -923,8 +931,7 @@ body {
         height: 100%;
     }
     
-    /* ===== УВЕЛИЧИВАЕМ СДВИГ СЛОВА "РАСПИСАНИЕ" НА ТЕЛЕФОНЕ ===== */
     .schedule-title-wrapper {
-        padding-left: 75px !important;  /* ← больше сдвиг на телефоне */
+        padding-left: 0 !important;
     }
 }
