@@ -388,7 +388,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    padding-left: 60px;  /* ← сдвиг вправо, меняйте это значение */
+    padding-left: 45px;  /* ← сдвиг вправо, меняйте это значение */
 }
 
 .schedule-title {
