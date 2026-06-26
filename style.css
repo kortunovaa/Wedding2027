@@ -154,7 +154,7 @@ body {
     height: 266px;
     position: absolute;
     left: 0;
-    top: 160px;
+    top: 250px;
     background: #979797;
     overflow: hidden;
 }
@@ -170,7 +170,7 @@ body {
 .hero-names-block {
     width: 343px;
     left: 50%;
-     top: 120px;  
+     top: 150px;  
     position: absolute;
     transform: translateX(-50%);
 }
@@ -200,7 +200,7 @@ body {
 .hero-text-block {
     width: 343px;
     left: 50%;
-    top: 500px;
+    top: 650px;
     position: absolute;
     display: flex;
     flex-direction: column;
