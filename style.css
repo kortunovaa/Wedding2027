@@ -321,50 +321,7 @@ body {
     letter-spacing: 1px;
 }
 
-/* ================================================================ */
-/* ========== БЛОК 3: ПОЖЕЛАНИЯ ПО ПОДАРКАМ ========== */
-/* ================================================================ */
-.wishes-card {
-    width: 393px;
-    height: 485px;
-    position: relative;
-    background: #DAD2CD;
-    overflow: hidden;
-    margin: 0 auto;
-}
 
-.wishes-content {
-    width: 343px;
-    left: 50%;
-    top: 37px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 31px;
-    transform: translateX(-50%);
-}
-
-.wishes-title {
-    width: 349px;
-    text-align: center;
-    color: #764545;
-    font-size: 25px;
-    font-family: 'Wulkan Display', serif;
-    font-weight: 500;
-    line-height: 20px;
-}
-
-.wishes-text {
-    align-self: stretch;
-    color: #1C1916;
-    font-size: 15px;
-    font-family: 'Wulkan Display', serif;
-    font-weight: 500;
-    line-height: 20px;
-    text-align: center;
-}
 
 /* ================================================================ */
 /* ========== БЛОК 4: РАСПИСАНИЕ ДНЯ ========== */
