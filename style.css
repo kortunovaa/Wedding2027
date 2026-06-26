@@ -92,7 +92,7 @@ body {
 
 .hero-content {
     width: 393px;
-    height: 947px;
+    height: 1050px;          /* ← УВЕЛИЧЕНО (было 947px) */
     left: 0;
     top: 42px;
     position: absolute;
@@ -145,7 +145,7 @@ body {
 
 .hero-main {
     align-self: stretch;
-    height: 719px;
+    height: 820px;           /* ← УВЕЛИЧЕНО (было 719px) */
     position: relative;
 }
 
@@ -170,7 +170,7 @@ body {
 .hero-names-block {
     width: 343px;
     left: 50%;
-     top: 150px;  
+    top: 150px;
     position: absolute;
     transform: translateX(-50%);
 }
