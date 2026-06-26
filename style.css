@@ -386,12 +386,12 @@ body {
 
 .schedule-title {
     width: 298px;
-    left: 60px; 
     color: #1C1916;
     font-size: 37px;
     font-family: 'Wulkan Display', serif;
     font-weight: 500;
     line-height: 30px;
+    margin-left: 60px;       /* ← сдвиг вправо */
 }
 
 .schedule-list {
