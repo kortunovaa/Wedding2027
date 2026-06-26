@@ -621,7 +621,7 @@ body {
 
 .organizer-content {
     width: 346px;
-    left: 30px;
+    left: 40px;
     top: 28px;
     position: absolute;
     display: flex;
@@ -723,9 +723,9 @@ body {
     top: 15px;
     position: absolute;
     display: flex;
-    flex-direction: column;    /* ← теперь вертикально */
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;   /* ← выравнивание по левому краю */
+    align-items: center;       /* ← выравнивание по центру */
     gap: 2px;
     width: 294px;
 }
@@ -736,7 +736,7 @@ body {
     font-family: 'Wulkan Display', serif;
     font-weight: 500;
     line-height: 28px;
-    text-align: left;
+    text-align: center;       /* ← текст по центру */
 }
 
 .footer-text-accent {
@@ -745,7 +745,7 @@ body {
     font-family: 'Wulkan Display', serif;
     font-weight: 500;
     line-height: 28px;
-    text-align: left;
+    text-align: center;       /* ← текст по центру */
 }
 
 /* ================================================================ */
@@ -925,6 +925,6 @@ body {
     
     /* ===== УВЕЛИЧИВАЕМ СДВИГ СЛОВА "РАСПИСАНИЕ" НА ТЕЛЕФОНЕ ===== */
     .schedule-title-wrapper {
-        padding-left: 80px !important;  /* ← больше сдвиг на телефоне */
+        padding-left: 75px !important;  /* ← больше сдвиг на телефоне */
     }
 }
