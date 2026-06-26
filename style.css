@@ -99,7 +99,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     gap: 64px;
 }
 
@@ -311,7 +311,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: -20px;
 }
 
 .timer-digits {
@@ -336,7 +335,7 @@ body {
 
 .wishes-content {
     width: 343px;
-    left: 25px;
+    left: 50%;
     top: 37px;
     position: absolute;
     display: flex;
@@ -344,6 +343,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 31px;
+    transform: translateX(-50%);
 }
 
 .wishes-title {
@@ -380,7 +380,7 @@ body {
 
 .schedule-content {
     width: 368px;
-    left: 13px;
+    left: 50%;
     top: 28px;
     position: absolute;
     display: flex;
@@ -388,6 +388,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 19px;
+    transform: translateX(-50%);
 }
 
 .schedule-title-wrapper {
@@ -532,7 +533,7 @@ body {
 
 .venue-content {
     width: 368px;
-    left: 13px;
+    left: 50%;
     top: 23px;
     position: absolute;
     display: flex;
@@ -540,6 +541,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 14px;
+    transform: translateX(-50%);
 }
 
 .venue-title {
@@ -729,7 +731,7 @@ body {
 
 .footer-text {
     padding: 10px;
-    left: 40px;
+    left: 50%;
     top: 15px;
     position: absolute;
     display: flex;
@@ -738,6 +740,7 @@ body {
     align-items: center;
     gap: 2px;
     width: 294px;
+    transform: translateX(-50%);
 }
 
 .footer-text-dark {
