@@ -100,7 +100,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 64px;
+    gap: 30px;
 }
 
 .hero-top {
@@ -110,12 +110,12 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 21px;
-    padding-left: 50px; 
+    padding-left: 50px;
 }
 
 .hero-title {
     width: 343px;
-    text-align:  left;
+    text-align: left;
 }
 
 .hero-title-dark {
@@ -145,32 +145,31 @@ body {
 
 .hero-main {
     align-self: stretch;
-    height: 719px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 25px;
 }
 
 .hero-photo-wrapper {
-    width: 393px;
-    height: 266px;
-    position: absolute;
-    left: 0;
-    top: 160px;
+    width: 100%;
+    max-width: 343px;
+    height: 280px;
     background: #979797;
     overflow: hidden;
+    border-radius: 10px;
+    margin: 0 auto;
 }
 
 .hero-photo {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform-origin: center;
 }
 
 .hero-names-block {
-    width: 343px;
-    left: 50px;
-    top: -20px;
-    position: absolute;
+    width: 100%;
+    padding-left: 25px;
 }
 
 .hero-names {
@@ -197,8 +196,8 @@ body {
 
 .hero-text-block {
     width: 343px;
-    left: 56px;
-    top: 470px;
+    left: 25px;
+    top: 426px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -209,6 +208,7 @@ body {
 
 .hero-text-greeting {
     align-self: stretch;
+    margin-bottom: 10px;
 }
 
 .hero-text-accent {
@@ -230,17 +230,17 @@ body {
 }
 
 .hero-text-invite {
-    width: 293px;
+    width: 100%;
 }
 
 .hero-text-invite .hero-text-dark {
-    text-transform: lowercase;
+    text-transform: none;
     font-size: 20px;
     line-height: 20px;
 }
 
 .hero-text-invite .hero-text-accent {
-    text-transform: lowercase;
+    text-transform: none;
     font-size: 20px;
     line-height: 20px;
 }
@@ -262,8 +262,8 @@ body {
 }
 
 .timer-content {
-    width: 293px;
-    left: 56px;
+    width: 343px;
+    left: 25px;
     top: 29px;
     position: absolute;
     display: flex;
@@ -275,6 +275,10 @@ body {
 
 .timer-title {
     align-self: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 3px;
 }
 
 .timer-title-dark {
@@ -298,12 +302,13 @@ body {
 .timer-box {
     align-self: stretch;
     height: 57px;
-     width: 100%; 
     background: #764545;
     border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 20px;
+    width: 100%;
     margin-left: -20px;
 }
 
@@ -313,6 +318,7 @@ body {
     font-family: 'Wulkan Display', serif;
     font-weight: 500;
     letter-spacing: 1px;
+    white-space: nowrap;
 }
 
 /* ================================================================ */
@@ -446,7 +452,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
 }
 
@@ -619,12 +625,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
 }
 
 .organizer-title {
     width: 294px;
+    text-align: left;
 }
 
 .organizer-title-accent {
@@ -648,9 +655,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;    /* ← БЫЛО center, СТАЛО flex-start */
+    align-items: flex-start;
     gap: 11px;
-     padding-left: 23px;
+    padding-left: 20px;
 }
 
 .org-item {
@@ -660,7 +667,7 @@ body {
     font-family: 'Wulkan Display', serif;
     font-weight: 500;
     line-height: 20px;
-    text-align: left;          /* ← БЫЛО center, СТАЛО left */
+    text-align: left;
 }
 
 .org-dot {
@@ -668,6 +675,7 @@ body {
     height: 15px;
     background: #1C1916;
     border-radius: 9999px;
+    align-self: flex-start;
 }
 
 .organizer-button {
@@ -695,8 +703,6 @@ body {
     transform: scale(1.02);
 }
 
-/* ================================================================ */
-/* ========== БЛОК 8: ПОДПИСЬ ========== */
 /* ================================================================ */
 /* ========== БЛОК 8: ПОДПИСЬ ========== */
 /* ================================================================ */
@@ -905,10 +911,5 @@ body {
         .designer-card {
             transform: scale(0.85);
         }
-    }
-    
-    /* Корректировка фото в первом блоке */
-    .hero-photo {
-        transform: rotate(-90deg) scale(1.6);
     }
 }
