@@ -170,7 +170,7 @@ body {
 .hero-names-block {
     width: 343px;
     left: 50%;
-    top: -20px;
+     top: 120px;  
     position: absolute;
     transform: translateX(-50%);
 }
